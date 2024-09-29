@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <link rel="stylesheet" href="bucks.css">
+</head>
+<body>
+    <div id="main">
+        <div class="circle"></div>
+        <div id="nav">
+            <div id="nav-prt1">
+               <img src="./cofee.png" alt="">
+                <a href="#">Home</a>
+                <a href="#">Menu</a>
+                <a href="#">What's new</a>
+                <a href="#">Contact</a>
+                </div>
+                </div>
+        <div id="content">
+            <div id="left">
+                <h2>It's not just Coffee It's <span>StarBucks</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum natus, perspiciatis qui corporis sint rem alias nesciunt necessitatibus dolore molestiae nostrum porro consequuntur temporibus totam atque, a blanditiis ad at!</p>
+                <button>Learn More</button>
+                <ul>
+                    <li><img src="./green.png" onclick="imgSlider('green.png');changeCircleColor('#017143')"></li>
+                    <li><img src="./pinki.png" onclick="imgSlider('pinki.png');changeCircleColor('#eb7495')"></li>
+                    <li><img src="./brown.png" onclick="imgSlider('brown.png');changeCircleColor('#7b3f00')"></li>
+                </ul>
+            </div>
+            <div id="right">
+               <img class="tasty" src="./green.png" alt="">
+               <ul class="ico">
+                <li><a href=""><i class="ri-instagram-line"></i></a></li>
+                <li><a href=""><i class="ri-twitter-x-line"></i></a></li>
+                <li><a href=""><i class="ri-facebook-fill"></i></a></li>
+               </ul>
+            </div>
+        </div>        
+                </div>
+                <script type="text/javascript">
+                    function imgSlider(anything){
+                    document.querySelector(".tasty").src = anything;
+                    }
+                    function changeCircleColor(color){
+                        const circle = document.querySelector('.circle');
+                        circle.style.background= color;
+                    }
+                </script>
+</body>
+</html>
